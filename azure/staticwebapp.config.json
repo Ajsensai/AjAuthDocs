@@ -1,6 +1,10 @@
 {
     "routes": [
       {
+        "route": "/docs/*",
+        "rewrite": "/docs/index.html"
+      },
+      {
         "route": "/.auth/logout",
         "statusCode": "302"
       },
