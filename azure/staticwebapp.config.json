@@ -1,8 +1,5 @@
 {
-    "routes": [{
-        "route": "/.auth/login/aad",
-        "statusCode": "401"
-      },
+    "routes": [
       {
         "route": "/.auth/logout",
         "statusCode": "302"
