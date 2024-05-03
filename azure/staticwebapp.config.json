@@ -1,10 +1,6 @@
 {
     "routes": [
       {
-        "route": "/.auth/*",
-        "rewrite": "/index.html"
-      },
-      {
         "route": "/docs/*",
         "allowedRoles": ["authenticated"],
         "fallback": {
