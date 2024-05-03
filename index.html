@@ -1,20 +1,16 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Static Web App</title>
-</head>
 <body>
-    <h1>Welcome to My Static Web App</h1>
-    <p>This is a protected page. You need to login with Azure AD.</p>
-    <button onclick="login()">Login with Azure AD</button>
-
-    <script>
-        function login() {
-            // Redirect to Azure AD login page
-            window.location.href = "/.auth/login/aad";
-        }
-    </script>
+    <h1>Azure Static Web Apps auth demo</h1>
+    <div>
+        <a href="/.auth/login/aad">Login</a>
+        <a href="/.auth/logout">Logout</a>
+    </div>
+    <div>
+        <ul>
+            <li><a href="/anonymous/">Anonymous Role page</a></li>
+            <li><a href="/authenticated/">Authenticated Role page</a></li>
+            <li><a href="/custom/">Custom Role page</a></li>
+        </ul>
+    </div>
 </body>
 </html>
