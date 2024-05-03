@@ -14,7 +14,7 @@
       },
       {
         "route": "/.auth/logout",
-        "statusCode": "302"
+        "rewrite": "/.auth/logout"
       },
       {
         "route": "/api/*",
