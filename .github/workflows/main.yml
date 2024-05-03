@@ -10,15 +10,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Build and Deploy to Azure Static Web Apps
-      uses: azure/static-web-apps-deploy@v1
-      with:
-        azure_static_web_apps_api_token: ${{ secrets.AZURE_CLIENT_SECRET }}
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
-        action: "upload"
-        app_location: "/"  # Root of your app
-        api_location: ""    # Not needed for static web apps
-        output_location: "" # Not needed for static web apps
+      - name: Build and Deploy to Azure Static Web Apps
+        uses: azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.GITHUB_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          app_location: "/"  # Root of your app
+          api_location: ""    # Not needed for static web apps
+          output_location: "" # Not needed for static web apps
