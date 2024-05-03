@@ -1,8 +1,16 @@
 {
     "routes": [
       {
+        "route": "/.auth/*",
+        "statusCode": "404",
+        "rewrite": "/index.html"
+      },
+      {
         "route": "/docs/*",
-        "rewrite": "/docs/index.html"
+        "allowedRoles": ["authenticated"],
+        "fallback": {
+          "rewrite": "/index.html"
+        }
       },
       {
         "route": "/.auth/logout",
