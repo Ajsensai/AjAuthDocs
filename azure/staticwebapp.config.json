@@ -5,7 +5,7 @@
         "allowedRoles": ["anonymous"]
       },
       {
-        "route": "/authenticated/*",
+        "route": "/docs/*",
         "allowedRoles": ["authenticated"]
       },
       {

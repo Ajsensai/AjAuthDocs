@@ -1,16 +1,86 @@
+<!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Static Web Apps Auth Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .auth-links {
+            margin-bottom: 20px;
+        }
+
+        .auth-links a {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .auth-links a:hover {
+            background-color: #0056b3;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        ul li a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
 <body>
-    <h1>Azure Static Web Apps auth demo</h1>
-    <div>
-        <a href="/.auth/login/aad">Login</a>
-        <a href="/.auth/logout">Logout</a>
-    </div>
-    <div>
-        <ul>
-            <li><a href="/anonymous/">Anonymous Role page</a></li>
-            <li><a href="/authenticated/">Authenticated Role page</a></li>
-            <li><a href="/custom/">Custom Role page</a></li>
-        </ul>
+    <div class="container">
+        <h1>Azure Static Web Apps Auth Demo</h1>
+        <div class="auth-links">
+            <a href="/.auth/login/aad">Login</a>
+            <a href="/.auth/logout">Logout</a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="/anonymous/">Anonymous Role Page</a></li>
+                <li><a href="/docs/">Docs</a></li>
+                <li><a href="/custom/">Custom Role Page</a></li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
