@@ -2,7 +2,6 @@
     "routes": [
       {
         "route": "/.auth/*",
-        "statusCode": "404",
         "rewrite": "/index.html"
       },
       {
@@ -32,5 +31,4 @@
     "globalHeaders": {
       "Content-Security-Policy": "default-src 'self' 'unsafe-inline'; img-src *; font-src *"
     }
-  }
-  
+}
